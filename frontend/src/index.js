@@ -10,6 +10,8 @@ import Bundles from "./Landing_Page/Bundle/Bundles";
 import Review_rail from "./Landing_Page/Reviw_rail";
 import Navbar from "./Landing_Page/Navbar";
 import ActulaReviewslide from "./Landing_Page/ActualReviwslide";
+import ClubSignup from "./Landing_Page/ClubSignup/ClubSignup";
+import Footer from "./Landing_Page/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,5 +23,7 @@ root.render(
     <Shop></Shop>
     <BestSellingCombos></BestSellingCombos>
     <Bundles></Bundles>
+    <ClubSignup></ClubSignup>
+    <Footer></Footer>
   </BrowserRouter>,
 );
