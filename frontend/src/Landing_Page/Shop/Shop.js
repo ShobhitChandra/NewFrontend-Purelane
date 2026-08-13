@@ -5,6 +5,13 @@ import "./Shop.css";
 
 function Shop() {
 
+    const getRandomProducts = (productsArray, count = 6) => {
+        const shuffled = [...productsArray].sort(() => Math.random() - 0.5);
+        return shuffled.slice(0, count);
+    };
+
+    const displayedProducts = getRandomProducts(products, 6);
+
     return (
         <section className="shop-section" id="shop">
 
@@ -33,7 +40,7 @@ function Shop() {
 
             <div className="products-grid">
 
-                {products.map((product) => (
+                {displayedProducts.map((product) => (
                     <Card
                         key={product.id}
                         product={product}
