@@ -26,21 +26,14 @@ function Navbar() {
 
                 <a href="#home">Home</a>
 
-                <Link to="/ingredients">
-                    Ingredients
-                </Link>
 
-                <Link to="/how-it-works">
-                    How it works
-                </Link>
-
-                <Link to="/shop">
+                <a href="#shop">
                     Shop
-                </Link>
+                </a>
 
-                <Link to="/bundles">
+                <a to="#bundles">
                     Bundles
-                </Link>
+                </a>
 
             </div>
 

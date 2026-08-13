@@ -5,12 +5,12 @@ import "./Shop.css";
 
 function Shop() {
 
-    const getRandomProducts = (productsArray, count = 6) => {
+    const getRandomProducts = (productsArray, count = 8) => {
         const shuffled = [...productsArray].sort(() => Math.random() - 0.5);
         return shuffled.slice(0, count);
     };
 
-    const displayedProducts = getRandomProducts(products, 6);
+    const displayedProducts = getRandomProducts(products, 8);
 
     return (
         <section className="shop-section" id="shop">
