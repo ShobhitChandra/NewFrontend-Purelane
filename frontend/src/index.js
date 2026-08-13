@@ -6,7 +6,7 @@ import "./index.css";
 import Hero from "./Landing_Page/Hero";
 import Shop from "./Landing_Page/Shop/Shop";
 import BestSellingCombos from "./Landing_Page/BestSellingCombos/BestSellingCombos";
-import Bundle from "./Landing_Page/Bundle";
+import Bundles from "./Landing_Page/Bundle/Bundles";
 import Review_rail from "./Landing_Page/Reviw_rail";
 import Navbar from "./Landing_Page/Navbar";
 import ActulaReviewslide from "./Landing_Page/ActualReviwslide";
@@ -20,6 +20,6 @@ root.render(
     <ActulaReviewslide></ActulaReviewslide>
     <Shop></Shop>
     <BestSellingCombos></BestSellingCombos>
-    <Bundle></Bundle>
+    <Bundles></Bundles>
   </BrowserRouter>,
 );
