@@ -1,0 +1,251 @@
+/* =====================================
+   NAVBAR
+===================================== */
+
+.navbar-custom {
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    width: calc(100% - 40px);
+
+    height: 70px;
+
+    margin: 20px auto 0;
+
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 40px;
+
+    background: rgba(36, 26, 61, 0.55);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(150, 140, 170, 0.35);
+
+    box-shadow: 0 10px 24px rgba(18, 12, 27, 0.18);
+
+    transition: all 0.3s ease;
+}
+
+
+/* =====================================
+   LOGO
+===================================== */
+
+.navbar-logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+}
+
+
+/* Logo circle */
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #eadfd3;
+
+    background: transparent;
+
+    color: #d5a66d;
+
+    font-size: 20px;
+}
+
+
+/* Logo text */
+
+.logo-text {
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1;
+}
+
+
+.logo-text span {
+    font-size: 21px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+    color: #716d7d;
+}
+
+
+.logo-text small {
+    margin-top: 5px;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    color: #aaa6b2;
+}
+
+
+/* =====================================
+   NAVIGATION LINKS
+===================================== */
+
+.navbar-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+.navbar-links a {
+    position: relative;
+
+    text-decoration: none;
+
+    color: #5e596d;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.navbar-links a:hover {
+    color: #007b72;
+
+    transform: translateY(-2px);
+}
+
+
+/* Underline */
+
+.navbar-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -5px;
+
+    width: 0;
+
+    height: 2px;
+
+    border-radius: 5px;
+
+    background: #c27613;
+
+    transition: width 0.25s ease;
+}
+
+
+.navbar-links a:hover::after {
+    width: 100%;
+}
+
+
+/* =====================================
+   RIGHT ICONS
+===================================== */
+
+.navbar-icons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.navbar-icons button,
+.navbar-icons a {
+    position: relative;
+
+    border: none;
+
+    background: transparent;
+
+    padding: 0;
+
+    text-decoration: none;
+
+    color: #625d70;
+
+    font-size: 19px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.navbar-icons button:hover,
+.navbar-icons a:hover {
+    color: #007b72;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================
+   CART COUNT
+===================================== */
+
+.cart-icon {
+    position: relative;
+}
+
+
+.cart-count {
+    position: absolute;
+
+    top: -10px;
+    right: -10px;
+
+    width: 19px;
+    height: 19px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #5d4a85;
+
+    color: white;
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
