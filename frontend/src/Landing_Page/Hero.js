@@ -5,21 +5,21 @@ function Hero() {
 
     const products = [
         {
-            image: "/media/images/2bot.png",
+            image: "/Media/Images/2bot.png",
             title: "ANY 2 PRODUCTS",
             price: "₹349",
             oldPrice: "₹598",
             save: "SAVE ₹249"
         },
         {
-            image: "/media/images/3bot.png",
+            image: "/Media/Images/3bot.png",
             title: "ANY 3 PRODUCTS",
             price: "₹499",
             oldPrice: "₹750",
             save: "SAVE ₹251"
         },
         {
-            image: "/media/images/1bot.png",
+            image: "/Media/Images/1bot.png",
             title: "STARTER PACK",
             price: "₹299",
             oldPrice: "₹399",
