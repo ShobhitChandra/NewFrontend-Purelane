@@ -1,0 +1,80 @@
+/* ==============================
+   TICKER
+================================ */
+
+.ticker {
+    width: 100%;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    background: transparent;
+
+    padding: 12px 0;
+}
+
+
+/* ==============================
+   MOVING TRACK
+================================ */
+
+.track {
+    display: flex;
+
+    width: max-content;
+
+    align-items: center;
+
+    gap: 70px;
+
+    animation: ticker-scroll 25s linear infinite;
+}
+
+
+/* ==============================
+   TEXT
+================================ */
+
+.track span {
+    display: inline-block;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    color: #5e596d;
+}
+
+
+.track b {
+    color: #007b72;
+
+    font-weight: 700;
+}
+
+
+/* ==============================
+   CONTINUOUS ANIMATION
+================================ */
+
+@keyframes ticker-scroll {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+/* ==============================
+   OPTIONAL: PAUSE ON HOVER
+================================ */
+
+.ticker:hover .track {
+    animation-play-state: paused;
+}

@@ -1,0 +1,307 @@
+/* =====================================
+   REVIEWS SECTION
+===================================== */
+
+.reviews-section {
+    width: 100%;
+
+    padding: 25px 0 35px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+/* =====================================
+   TOP HEADING
+===================================== */
+
+.reviews-heading {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-bottom: 30px;
+
+    white-space: nowrap;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #555269;
+}
+
+
+.reviews-heading > span:first-child {
+    color: #777484;
+}
+
+
+.reviews-heading .stars {
+    color: #6f9b18;
+
+    font-size: 22px;
+
+    letter-spacing: 2px;
+}
+
+
+.reviews-heading strong {
+    color: #bd7015;
+
+    font-size: 22px;
+
+    letter-spacing: 1px;
+}
+
+
+.reviews-heading .homes {
+    color: #bd7015;
+}
+
+
+/* =====================================
+   SLIDER
+===================================== */
+
+.reviews-slider {
+    width: 100%;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+/* =====================================
+   MOVING TRACK
+===================================== */
+
+.reviews-track {
+    display: flex;
+
+    width: max-content;
+
+    gap: 20px;
+
+    animation: reviews-scroll 35s linear infinite;
+}
+
+
+/* =====================================
+   REVIEW CARD
+===================================== */
+
+.review-card {
+    width: 470px;
+
+    min-height: 275px;
+
+    flex-shrink: 0;
+
+    padding: 28px 30px;
+
+    border-radius: 25px;
+
+    border: 1px solid rgba(190, 190, 210, 0.55);
+
+    background: rgba(255, 255, 255, 0.58);
+
+    backdrop-filter: blur(8px);
+
+    -webkit-backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 5px 20px rgba(80, 90, 100, 0.05);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+
+/* =====================================
+   STARS
+===================================== */
+
+.review-stars {
+    color: #719b17;
+
+    font-size: 20px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =====================================
+   TITLE
+===================================== */
+
+.review-card h3 {
+    margin: 0 0 12px;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    color: #17132d;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =====================================
+   REVIEW TEXT
+===================================== */
+
+.review-card p {
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.55;
+
+    color: #656276;
+}
+
+
+/* =====================================
+   AUTHOR
+===================================== */
+
+.review-author {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 20px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #858290;
+}
+
+
+.review-author strong {
+    color: #075b55;
+}
+
+
+.review-author .check {
+    color: #609016;
+
+    font-size: 20px;
+}
+
+
+/* =====================================
+   CONTINUOUS ANIMATION
+===================================== */
+
+@keyframes reviews-scroll {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+/* =====================================
+   HOVER
+===================================== */
+
+.reviews-track:hover {
+    animation-play-state: paused;
+}
+
+
+.review-card {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.review-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(60, 70, 80, 0.12);
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 768px) {
+
+    .reviews-heading {
+        justify-content: flex-start;
+
+        overflow: hidden;
+
+        padding-left: 20px;
+
+        font-size: 12px;
+
+        gap: 8px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .reviews-heading .stars {
+        font-size: 15px;
+    }
+
+
+    .reviews-heading strong {
+        font-size: 15px;
+    }
+
+
+    .review-card {
+        width: 330px;
+
+        min-height: 260px;
+
+        padding: 23px;
+
+        border-radius: 20px;
+    }
+
+
+    .review-card h3 {
+        font-size: 17px;
+    }
+
+
+    .review-card p {
+        font-size: 15px;
+    }
+
+}
