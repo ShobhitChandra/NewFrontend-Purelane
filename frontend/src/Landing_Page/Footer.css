@@ -1,0 +1,284 @@
+/* =====================================
+   FOOTER
+===================================== */
+
+.footer {
+    width: 100%;
+
+    padding: 55px 5% 25px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(224, 242, 235, 0.75),
+            rgba(202, 233, 215, 0.9)
+        );
+
+    color: #5b5a70;
+}
+
+
+/* =====================================
+   MAIN FOOTER
+===================================== */
+
+.footer-container {
+    max-width: 1500px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 60px;
+
+    padding-bottom: 60px;
+}
+
+
+/* =====================================
+   BRAND
+===================================== */
+
+.footer-logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 25px;
+}
+
+.footer-logo-circle {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 1px solid #c5c8bd;
+
+    background: rgba(255, 255, 255, 0.35);
+
+    color: #d67d16;
+
+    font-size: 25px;
+}
+
+.footer-logo h3 {
+    margin: 0;
+
+    color: #18132f;
+
+    font-size: 27px;
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+.footer-logo span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #858494;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+/* Brand description */
+
+.footer-brand > p {
+    margin: 0;
+
+    color: #636177;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================
+   COLUMNS
+===================================== */
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.footer-column h4 {
+    margin: 5px 0 12px;
+
+    color: #528b1c;
+
+    font-size: 14px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+
+/* Links */
+
+.footer-column a {
+    width: fit-content;
+
+    color: #5e5d72;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: #006e67;
+
+    transform: translateX(4px);
+}
+
+
+/* Contact */
+
+.contact-column p {
+    margin: 0;
+
+    color: #636177;
+
+    font-size: 15px;
+}
+
+
+/* =====================================
+   BOTTOM
+===================================== */
+
+.footer-bottom {
+    max-width: 1500px;
+
+    margin: auto;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(130, 150, 145, 0.28);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: #777789;
+
+    font-size: 15px;
+}
+
+
+/* Legal links */
+
+.footer-legal {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.footer-legal a {
+    color: #777789;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+    color: #006e67;
+}
+
+.footer-legal span {
+    color: #999aaa;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 900px) {
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 45px;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .footer {
+        padding: 45px 20px 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+    }
+
+    .footer-legal {
+        flex-wrap: wrap;
+    }
+
+}
