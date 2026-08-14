@@ -16,7 +16,7 @@ const bundles = [
 
         popular: false,
 
-        bottleClass: "p-kitchen"
+        bottleCount: 2
     },
 
     {
@@ -37,7 +37,7 @@ const bundles = [
 
         popular: true,
 
-        bottleClass: "p-laundry"
+        bottleCount: 3
     },
 
     {
@@ -58,7 +58,7 @@ const bundles = [
 
         popular: false,
 
-        bottleClass: "p-bathroom"
+        bottleCount: 5
     }
 ];
 
