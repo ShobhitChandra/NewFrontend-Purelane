@@ -21,16 +21,11 @@ function BundleCard({ bundle }) {
 
                 <div className="bundle-products">
 
-                    {bundle.imageProducts.map((product, index) => (
-
-                        <span
-                            key={index}
-                            className={`pimg ${product}`}
-                            role="img"
-                            aria-label="Purelane non-toxic cleaning product"
-                        ></span>
-
-                    ))}
+                    <span
+                        className={`pimg ${bundle.bottleClass}`}
+                        role="img"
+                        aria-label="Purelane product bottle"
+                    ></span>
 
                 </div>
 

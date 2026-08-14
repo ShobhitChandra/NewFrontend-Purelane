@@ -16,10 +16,7 @@ const bundles = [
 
         popular: false,
 
-        imageProducts: [
-            "p-laundry",
-            "p-kitchen"
-        ]
+        bottleClass: "p-kitchen"
     },
 
     {
@@ -40,11 +37,7 @@ const bundles = [
 
         popular: true,
 
-        imageProducts: [
-            "p-kitchen",
-            "p-laundry",
-            "p-bathroom"
-        ]
+        bottleClass: "p-laundry"
     },
 
     {
@@ -65,13 +58,7 @@ const bundles = [
 
         popular: false,
 
-        imageProducts: [
-            "p-laundry",
-            "p-kitchen",
-            "p-bathroom",
-            "p-handwash",
-            "p-floor"
-        ]
+        bottleClass: "p-bathroom"
     }
 ];
 
